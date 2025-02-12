@@ -1,0 +1,201 @@
+{%load static%}
+
+<!doctype html>
+<html class="no-js" lang="zxx">
+    <head>
+        <!-- Meta Tags -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="keywords" content="Site keywords here">
+		<meta name="description" content="">
+		<meta name='copyright' content=''>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<!-- Title -->
+        <title>wankhedetechnologies</title>
+		
+		<!-- Favicon -->
+        <!-- <link rel="icon"  type="image/x-icon" href="{%static 'img/fevicon.ico'%}"> -->
+		<link rel="icon" href="{% static 'img/fev.png' %}" type="image/x-icon">
+
+		
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="{%static 'css/bootstrap.min.css'%}">
+		<!-- Nice Select CSS -->
+		<link rel="stylesheet" href="{%static 'css/nice-select.css'%}">
+		<!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="{% static 'css/font-awesome.min.css'%}">
+		<!-- icofont CSS -->
+        <link rel="stylesheet" href="{%static 'css/icofont.css'%}">
+		<!-- Slicknav -->
+		<link rel="stylesheet" href="{%static 'css/slicknav.min.css'%}">
+		<!-- Owl Carousel CSS -->
+        <link rel="stylesheet" href="{%static 'css/owl-carousel.css'%}">
+		<!-- Datepicker CSS -->
+		<link rel="stylesheet" href="{%static 'css/datepicker.css'%}">
+		<!-- Animate CSS -->
+        <link rel="stylesheet" href="{% static 'css/animate.min.css'%}">
+		<!-- Magnific Popup CSS -->
+        <link rel="stylesheet" href="{% static 'css/magnific-popup.css'%}">
+		
+		<!-- Medipro CSS -->
+        <link rel="stylesheet" href="{%static 'css/normalize.css'%}">
+        <link rel="stylesheet" href="{%static 'style.css'%}">
+        <link rel="stylesheet" href="{%static 'css/responsive.css'%}">
+		
+    </head>
+    <body>
+	
+		<!-- Preloader -->
+        <div class="preloader">
+            <div class="loader">
+                <div class="loader-outter"></div>
+                <div class="loader-inner"></div>
+
+                <div class="indicator"> 
+                    <svg width="16px" height="12px">
+                        <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                        <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <!-- End Preloader -->
+		
+		<!-- Get Pro Button -->
+		<ul class="pro-features">
+			<a class="get-pro icofont-globe" href="#" style="font-size: 100%;"></a>
+			<ul class="social" style="width: 10px;">
+				
+				<li><a href="mailto:{{social.email}}?subject=Subject%20Here"><i class="icofont-email"> Email </i></a></li>
+				<li><a href="{{social.whatsapp}}"><i class="icofont-whatsapp"> whatapp</i></a></li>
+				<li><a href="{{social.facebook}}"><i class="icofont-facebook"> facebook</i></a></li>
+				<li><a href="{{social.instagram}}"><i class="icofont-instagram"> instagram</i></a></li>
+				<li><a href="{{social.twitter}}"><i class="icofont-twitter"> twitter</i></a></li>
+			</ul>			
+		</ul>
+	
+
+		
+
+
+        {%block 'content'%}
+        {%endblock%}
+
+
+
+		<!-- Footer Area -->
+		<footer id="footer" class="footer ">
+			<!-- Footer Top -->
+			<div class="footer-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4 col-md-4 col-12" style="padding-right: 8%;">
+							<div class="single-footer">
+								<h2>About Us</h2>
+								<p>Wankhede Technologies Pvt. Ltd. specializes in building innovative online marketplaces and web development solutions, empowering businesses with seamless digital experiences, advanced e-commerce platforms, and cutting-edge technology to drive growth and success.</p>
+								<!-- Social -->
+								<ul class="social">
+									<li><a href="mailto:{{social.email}}?subject=Subject%20Here"><i class="icofont-email"> </i></a></li>
+									<li><a href="{{social.whatsapp}}"><i class="icofont-whatsapp"> </i></a></li>
+									<li><a href="{{social.facebook}}"><i class="icofont-facebook"> </i></a></li>
+									<li><a href="{{social.instagram}}"><i class="icofont-instagram"> </i></a></li>
+									<li><a href="{{social.twitter}}"><i class="icofont-twitter"> </i></a></li>
+								</ul>
+								<!-- End Social -->
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-12">
+							<div class="single-footer f-link">
+								<h2>Quick Links</h2>
+								<div class="row">
+									<div class="col-lg-6 col-md-4 col-12">
+										<ul>
+											<li><a href="{%url 'home'%}"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a></li>
+											<li><a href="{% url 'aboutUs'%}"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a></li>
+											<li><a href="{%url 'services'%}"><i class="fa fa-caret-right" aria-hidden="true"></i>Services</a></li>
+											<li><a href="{%url 'contactus'%}"><i class="fa fa-caret-right" aria-hidden="true"></i>contact us</a></li>
+											<li><a href="{% url 'blog'%}"><i class="fa fa-caret-right" aria-hidden="true"></i>blog</a></li>	
+										</ul>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-12">
+							<div class="single-footer">
+								<h2>Open Hours</h2>
+								<p>Our office is open Monday to Saturday</p>
+								<ul class="time-sidual">
+									<li class="day">Monday - Saturday <span>10 AM - 5 PM</span></li>
+									<li class="day">Sunday <span>Close</span></li>
+
+								</ul>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<!--/ End Footer Top -->
+			<!-- Copyright -->
+			<div class="copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-12">
+							<div class="copyright-content">
+								<p>© Copyright 2025  |  All Rights Reserved by <a href="{%url 'aboutUs'%}" target="_blank">wankhedetechnologies.com</a> </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Copyright -->
+		</footer>
+		<!--/ End Footer Area -->
+		
+		<!-- jquery Min JS -->
+        <script src="{% static 'js/jquery.min.js'%}"></script>
+		<!-- jquery Migrate JS -->
+		<script src="{% static 'js/jquery-migrate-3.0.0.js'%}"></script>
+		<!-- jquery Ui JS -->
+		<script src="{%static 'js/jquery-ui.min.js'%}"></script>
+		<!-- Easing JS -->
+        <script src="{%static 'js/easing.js'%}"></script>
+		<!-- Color JS -->
+		<script src="{% static 'js/colors.js'%}"></script>
+		<!-- Popper JS -->
+		<script src="{%static 'js/popper.min.js'%}"></script>
+		<!-- Bootstrap Datepicker JS -->
+		<script src="{% static 'js/bootstrap-datepicker.js'%}"></script>
+		<!-- Jquery Nav JS -->
+        <script src="{% static 'js/jquery.nav.js'%}"></script>
+		<!-- Slicknav JS -->
+		<script src="{%static 'js/slicknav.min.js'%}"></script>
+		<!-- ScrollUp JS -->
+        <script src="{% static 'js/jquery.scrollUp.min.js'%}"></script>
+		<!-- Niceselect JS -->
+		<script src="{%static 'js/niceselect.js%'%}"></script>
+		<!-- Tilt Jquery JS -->
+		<script src="{% static 'js/tilt.jquery.min.js'%}"></script>
+		<!-- Owl Carousel JS -->
+        <script src="{%static 'js/owl-carousel.js'%}"></script>
+		<!-- counterup JS -->
+		<script src="{%static 'js/jquery.counterup.min.js'%}"></script>
+		<!-- Steller JS -->
+		<script src="{% static 'js/steller.js'%}"></script>
+		<!-- Wow JS -->
+		<script src="{% static 'js/wow.min.js'%}"></script>
+		<!-- Magnific Popup JS -->
+		<script src="{%static 'js/jquery.magnific-popup.min.js'%}"></script>
+		<!-- Counter Up CDN JS -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="{%static 'js/bootstrap.min.js'%}"></script>
+		<!-- Main JS -->
+		<script src="{%static 'js/main.js'%}"></script>
+    </body>
+</html>
